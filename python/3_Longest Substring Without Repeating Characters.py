@@ -11,7 +11,7 @@ class Solution:
         start = maxLength = 0
         usedChar = {}
         
-        for i in range(len(s)):
+        for i in xrange(len(s)):
             if s[i] in usedChar and start <= usedChar[s[i]]:
                 start = usedChar[s[i]] + 1
             else:
